@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    height: 200px;
+    width: 100%;
+    background-color: #544637;/*fondo*/
+    display: flex;
+    flex-direction:row;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenido{
+    
+    height: 25vh;
+    background: #544637;
+    text-align: center;
+}
+.text{
+    font-family: "Sekuya", system-ui;
+    font-size: 6.7rem;
+    text-transform: uppercase;
+    background: url(./imagenes/letra.jpeg);
+    background-size: cover;
+    background-position: 0 0;
+    background-clip:text;
+    color: transparent;
+    animation: saiyajin 10s linear infinite;
+}
+@keyframes saiyajin{
+    to{
+        background-position-x: 400px;
+    }
+}
+#Logo{
+    height: 230px;
+    padding: 1px;
+    filter: drop-shadow(15px 15px 25px #eee5d9);/*la sombra*/
+}
+nav{
+    width: 200%;
+    padding-right: 3%;
+}
+ul{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;/*tamaño de letra*/
+    display: flex;
+    flex-direction: row;      
+    justify-content: flex-end;
+    gap: 20px;/*el espacio entre elementos*/
+    list-style:none;
+    font-weight: bold;
+    margin-top:-5px;
+    a{/*seudoclases*/
+        li{
+            color: #eee5d9;
+        }
+    }
+}
+.TitulosC{
+    font-family: "Sekuya", system-ui;
+    font-size: 60px;
+    color: #4b607f;
+    font-weight: 500;
+}
+.Seccion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Articulos{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#Razas{
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+#Personajes{
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+#Transformaciones{
+    float: left;
+}
+
+.contenido {
+    flex: 1;
+}
+
+.footer{
+    margin-top: auto;
+    width: 100%;
+    background-color: #544637;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;   
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.social-icons ion-icon {
+    font-size: 32px;
+    color: #eee5d9;
+    transition: transform 0.2s ease;
+}
+.social-icons ion-icon:hover {
+    transform: scale(1.2);
+    color: #fc7643;
+}
+body{
+    background-image: url("./imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
