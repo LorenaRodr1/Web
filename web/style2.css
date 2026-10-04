@@ -8,21 +8,31 @@
 header{
     height: 200px;
     width: 100%;
-    background-color: #544637;/*fondo*/
+    background-color: #302f33;/*fondo*/
     display: flex;
     flex-direction:row;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.contenido{
+#Logo{
+    height: 230px;
+    padding: 1px;
+    filter: drop-shadow(15px 15px 25px #e9d8a6);/*la sombra*/
+}
+nav{
+    width: 200%;
+    padding-right: 3%;
+}
+.Titulos{
+    font-family: "Sekuya", system-ui;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top:60px;   
     
-    height: 25vh;
-    background: #544637;
-    text-align: center;
 }
 .text{
     font-family: "Sekuya", system-ui;
-    font-size: 6.7rem;
+    font-size: 5rem;
     text-transform: uppercase;
     background: url(./imagenes/letra.jpeg);
     background-size: cover;
@@ -36,15 +46,6 @@ header{
         background-position-x: 400px;
     }
 }
-#Logo{
-    height: 230px;
-    padding: 1px;
-    filter: drop-shadow(15px 15px 25px #eee5d9);/*la sombra*/
-}
-nav{
-    width: 200%;
-    padding-right: 3%;
-}
 ul{
     font-family: "Roboto", sans-serif;
     font-size: 25px;/*tamaño de letra*/
@@ -57,14 +58,19 @@ ul{
     margin-top:-5px;
     a{/*seudoclases*/
         li{
-            color: #eee5d9;
+            color: #c2c7cf;
         }
     }
 }
+
+.contenido {
+    flex: 1;
+}
+
 .footer{
     margin-top: auto;
     width: 100%;
-    background-color: #544637;
+    background-color:#302f33;
     color: #fff;
     text-align: center;
     padding: 20px 0;   
@@ -79,7 +85,7 @@ ul{
 }
 .social-icons ion-icon {
     font-size: 32px;
-    color: #ebe3e3;
+    color: #7f8995;
     transition: transform 0.2s ease;
 }
 .social-icons ion-icon:hover {
@@ -90,17 +96,13 @@ body{
     background-image: url("./imagenes/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    align-items:center;
-    justify-content:center;
-    height: 100vh;
-    gap:10px;
 }
 .main-content{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 90px 0;
 }
 .container{
     display: flex; 
@@ -117,7 +119,7 @@ body{
     transition: flex 0.5s ease-in-out; 
 }
 .card:hover{
-    flex: 4; 
+    flex: 5; 
 }
 .card img{
     width: 100%;
