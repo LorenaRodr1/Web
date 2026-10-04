@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap');
 *{
     margin: 0;
@@ -9,21 +8,31 @@
 header{
     height: 200px;
     width: 100%;
-    background-color: #544637;/*fondo*/
+    background-color: #302f33;/*fondo*/
     display: flex;
     flex-direction:row;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.contenido{
+#Logo{
+    height: 230px;
+    padding: 1px;
+    filter: drop-shadow(15px 15px 25px #e9d8a6);/*la sombra*/
+}
+nav{
+    width: 200%;
+    padding-right: 3%;
+}
+.Titulos{
+    font-family: "Sekuya", system-ui;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top:60px;   
     
-    height: 25vh;
-    background: #544637;
-    text-align: center;
 }
 .text{
     font-family: "Sekuya", system-ui;
-    font-size: 6.7rem;
+    font-size: 5rem;
     text-transform: uppercase;
     background: url(./imagenes/letra.jpeg);
     background-size: cover;
