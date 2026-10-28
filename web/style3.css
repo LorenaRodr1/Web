@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    height: 200px;
+    width: 100%;
+    background-color: #302f33;/*fondo*/
+    display: flex;
+    flex-direction:row;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Logo{
+    height: 200px;
+    padding: 1px;
+    filter: drop-shadow(15px 15px 25px #e9d8a6);/*la sombra*/
+}
+nav{
+    width: 200%;
+    padding-right: 3%;
+}
+.Titulos{
+    font-family: "Sekuya", system-ui;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top:60px;   
+    
+}
+.text{
+    font-family: "Sekuya", system-ui;
+    font-size: 5rem;
+    text-transform: uppercase;
+    background: url(./imagenes/letra.jpeg);
+    background-size: cover;
+    background-position: 0 0;
+    background-clip:text;
+    color: transparent;
+    animation: saiyajin 10s linear infinite;
+}
+@keyframes saiyajin{
+    to{
+        background-position-x: 400px;
+    }
+}
+ul{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;/*tamaño de letra*/
+    display: flex;
+    flex-direction: row;      
+    justify-content: flex-end;
+    gap: 20px;/*el espacio entre elementos*/
+    list-style:none;
+    font-weight: bold;
+    margin-top:-5px;
+    a{/*seudoclases*/
+        li{
+            color: #c2c7cf;
+        }
+    }
+}
+
+.contenido {
+    flex: 1;
+}
+
+
+.footer{
+    margin-top: auto;
+    width: 100%;
+    background-color:#302f33;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;   
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.social-icons ion-icon {
+    font-size: 32px;
+    color: #7f8995;
+    transition: transform 0.2s ease;
+}
+.social-icons ion-icon:hover {
+    transform: scale(1.2);
+    color: #fc7643;
+}
+body{
+    background-image: url("./imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
